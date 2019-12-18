@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<!--
+* CoreUI Free - Vue.js Admin Template
+* @version v3.0.0-beta.1
+* @link https://coreui.io/vue/
+* Copyright (c) 2019 creativeLabs Łukasz Holeczek
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Imagesouk: Royalty Free, Arab Stock Photo, Gulf Images.</title>
+    <!-- favicons for all devices -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- geotagging -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        // Shared ID
+        gtag('config', 'UA-118965717-3');
+        // Vue.js ID
+        gtag('config', 'UA-118965717-7');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/jquery-11.0.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js" integrity="sha256-1snhdKmSJxiSsTwpSFZxXxAFOl8uwOkZGv2JEwlRCvg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.js" integrity="sha256-hvGBNaOIbTrIYEzz8PilkK1D6jjwQUHYHdrlKjIIbfc=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.css" integrity="sha256-qfpVU1AcbUtXTOTbzslIrqFkKGUytPSs4YMRJSNUD60=" crossorigin="anonymous" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- nanogallery2 -->
+    <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+
+            jQuery("#gallery").unitegallery();
+        });
+
+    </script>
+
+    <!--<div ID="ngy2p" data-nanogallery2='{
+        "itemsBaseURL": "http://nanogallery2.nanostudio.org/samples/",
+        "thumbnailWidth": "auto",
+        "thumbnailHoverEffect2": "toolsSlideUp",
+        "galleryDisplayMode": "rows",
+        "galleryLastRowFull": true,
+        "thumbnailAlignment": "center",
+        "thumbnailOpenImage": false
+      }'>
+        <a href="berlin1.jpg" data-ngthumb="berlin1t.jpg" data-ngdesc="">Berlin 1</a>
+        <a href="berlin2.jpg" data-ngthumb="berlin2t.jpg" data-ngdesc="">Berlin 2</a>
+        <a href="berlin3.jpg" data-ngthumb="berlin3t.jpg" data-ngdesc="">Berlin 3</a>
+
+    </div>-->
+
+
+
+    <div id="ngy2p"
+         data-nanogallery2='{
+                        "itemsBaseURL":     "img/",
+        
+        "thumbnailOpenOriginal": true,
+        "thumbnailWidth": "auto",
+        "thumbnailHeight": "300",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "colorScheme": {
+          "thumbnail": {
+            "background": "rgba(0,0,0,0)"
+          }
+        },
+        "thumbnailDisplayTransition": "slideLeft",
+        "thumbnailLabel": {
+          "display": false
+        },
+        "thumbnailHoverEffect2": "image_translateY_0%_-100%_1000|label_translateX_-100%_0%_1000|label_font-size_1.5em_3em_2000",
+        "galleryLastRowFull": true,
+        "thumbnailAlignment": "justified",
+        "galleryFilterTags": true,
+        "thumbnailLevelUp": true
+                      }'>
+
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544609188-00592k-DS0018769.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544949149-05498A-IS0072619.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+        <a href="berlin1.jpg" data-ngThumb="1544696869-002561-IS0058726.jpg"> Berlin 1 </a>
+        <a href="berlin2.jpg" data-ngThumb="1544944589-04888A-DS0033962.jpg"> Berlin 2 </a>
+        <a href="berlin3.jpg" data-ngThumb="1544946784-05184k-DS0022459.jpg"> Berlin 3 </a>
+    </div>
+    <!--<div id="nanogallery2">
+        <img alt="Peppers"
+             src="img/1544696869-002561-IS0058726.jpg"
+             data-image="img/1544696869-002561-IS0058726.jpg"
+             data-description="Those are peppers">
+        <img alt="Peppers2"
+             src="img/1544944589-04888A-DS0033962.jpg"
+             data-image="img/1544944589-04888A-DS0033962.jpg"
+             data-description="Those are peppers">
+        <img alt="Peppers3"
+             src="img/1544946784-05184k-DS0022459.jpg"
+             data-image="img/1544946784-05184k-DS0022459.jpg"
+             data-description="Those are peppers">
+        <img alt="Peppers4"
+             src="img/1544949149-05498A-IS0072619.jpg"
+             data-image="img/1544949149-05498A-IS0072619.jpg"
+             data-description="Those are peppers">
+        <img alt="Peppers5"
+             src="img/1544984443-06355A-IS0066806.jpg"
+             data-image="img/1544984443-06355A-IS0066806.jpg"
+             data-description="Those are peppers">
+    </div>-->
+</body>
+
+</html>
