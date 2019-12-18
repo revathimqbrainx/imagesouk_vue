@@ -6,7 +6,7 @@
                     <div class="header-logo"></div>
                 </div>
                 <div class="col-lg-6 header-btn text-right">
-                    <a-button type="primary" class="btn-active"><router-link to="/login">Go TO Admin</router-link></a-button>
+                    <a-button type="primary" class="btn-active"><router-link to="/login">Go To Admin</router-link></a-button>
                     <a-button type="primary" class="btn-active">Contact Us</a-button>
                     <a-button class="sign-In-btn" type="primary" @click="showModal" v-if="!isHidden">Sign In</a-button>
                     <a-dropdown v-if="!isHidden2">
